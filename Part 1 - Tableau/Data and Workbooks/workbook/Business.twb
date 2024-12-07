@@ -29,24 +29,6 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
-      <aliases enabled='yes' />
-      <column caption='Top N' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='5'>
-        <calculation class='tableau' formula='5' />
-        <range max='16' min='1' />
-      </column>
-      <column caption='Reference line' datatype='integer' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='160000'>
-        <calculation class='tableau' formula='160000' />
-        <range granularity='100' max='300000' min='100000' />
-      </column>
-      <column caption='Calc parameter' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;SUM&quot;'>
-        <calculation class='tableau' formula='&quot;SUM&quot;' />
-        <members>
-          <member value='&quot;SUM&quot;' />
-          <member value='&quot;AVERAGE&quot;' />
-        </members>
-      </column>
-    </datasource>
     <datasource caption='User Data' inline='true' name='federated.08rkqko1micd5l1h5uwpn03no3a9' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -290,6 +272,24 @@
           </object>
         </objects>
       </object-graph>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Top N' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='5'>
+        <calculation class='tableau' formula='5' />
+        <range max='16' min='1' />
+      </column>
+      <column caption='Reference line' datatype='integer' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='160000'>
+        <calculation class='tableau' formula='160000' />
+        <range granularity='100' max='300000' min='100000' />
+      </column>
+      <column caption='Calc parameter' datatype='string' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='&quot;SUM&quot;'>
+        <calculation class='tableau' formula='&quot;SUM&quot;' />
+        <members>
+          <member value='&quot;SUM&quot;' />
+          <member value='&quot;AVERAGE&quot;' />
+        </members>
+      </column>
     </datasource>
     <datasource caption='Sales+' inline='true' name='federated.0y0gse60cqfr0y17v63to0z2bspv' version='18.1'>
       <connection class='federated'>
@@ -2298,8 +2298,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='27' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98632' id='25' param='vert' type-v2='layout-flow' w='98066' x='967' y='684'>
                 <zone fixed-size='73' h='6929' id='21' is-fixed='true' is-scaled='1' param='/Users/laurentfidahoussen/Code/apps/3-in-1-Data-Viz-Bundle_-Tableau-Excel-Looker-Studio/Part 1 - Tableau/Data and Workbooks/logosquare.png' type-v2='bitmap' w='18743' x='967' y='684'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
